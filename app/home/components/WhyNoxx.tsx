@@ -31,8 +31,8 @@ export default function WhyNoxx() {
         {/* Left Content */}
         <div className="w-full lg:max-w-[588px]">
 
-          <h2 className="font-['Poppins'] text-[39px] font-semibold uppercase leading-tight tracking-wider text-white lg:text-4xl">
-            WE DIDN'T BUILD ANOTHER
+          <h2 className="font-['Poppins'] text-[26px] lg:text-[39px] font-semibold uppercase leading-tight tracking-wider text-white lg:text-4xl">
+            WE DIDN&rsquo;T BUILD ANOTHER
             <br />
             FOOD BRAND
           </h2>
@@ -51,7 +51,7 @@ export default function WhyNoxx() {
                 className="flex items-start gap-5 rounded-xl border border-[#EAE4D9] bg-white p-5"
               >
                 {/* Icon */}
-                <div className="flex h-104px w-588px shrink-0 items-center justify-center rounded-[10px] bg-[#D92127]/20">
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-[10px] bg-[#D92127]/20">
 
                   <Image
                     src={feature.icon}
@@ -69,7 +69,7 @@ export default function WhyNoxx() {
                     {feature.title}
                   </h3>
 
-                  <p className="mt-1 font-['Poppins'] text-{13px} leading-5 text-[#8C8070]">
+                  <p className="mt-1 font-['Poppins'] text-[13px] leading-5 text-[#8C8070]">
                     {feature.description}
                   </p>
 
@@ -82,7 +82,7 @@ export default function WhyNoxx() {
         </div>
 
         {/* Right Image */}
-        <div className="relative h-[551px] w-672px overflow-hidden rounded-3xl bg-[#B0B0B0] lg:h-[554px] lg:w-[672px]">
+        <div className="relative min-h-[300px] w-full overflow-hidden rounded-3xl bg-[#B0B0B0] sm:min-h-[420px] lg:h-[554px] lg:w-[672px]">
 
           <Image
             src="/home/why-noxx.png"

@@ -10,7 +10,7 @@ export default function PromoCards() {
         <div className="flex flex-col lg:flex-row gap-6">
 
           {/* Left Banner */}
-          <div className="relative h-[384px] w-full lg:w-[523px] overflow-hidden rounded-[20px] flex-shrink-0">
+          <div className="relative min-h-[384px] w-full lg:w-[523px] overflow-hidden rounded-[20px] flex-shrink-0">
             <Image
               src="/home/promo-left.png"
               alt="Super Delicious"
@@ -21,7 +21,7 @@ export default function PromoCards() {
           </div>
 
           {/* Right Banner */}
-          <div className="relative h-[384px] flex-1 overflow-hidden rounded-[20px] min-w-0">
+          <div className="relative min-h-[384px] flex-1 overflow-hidden rounded-[20px] min-w-0">
             <Image
               src="/home/promo-right.png"
               alt="Buy More Save More"

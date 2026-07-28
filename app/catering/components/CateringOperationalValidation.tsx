@@ -44,19 +44,19 @@ const validationItems = [
 export default function CateringOperationalValidation() {
   return (
     <section className="w-full bg-[#F5F1EA] py-[40px]">
-  <div className="mx-auto max-w-[1440px] px-[62px]">
+  <div className="mx-auto max-w-[1440px] px-5 lg:px-[62px]">
 
         {/* Heading */}
-        <h2 className="text-center font-['Poppins'] text-[36px] font-semibold leading-[57px] text-[#1A0E04]">
+        <h2 className="text-center font-['Poppins'] text-[24px] lg:text-[36px] font-semibold leading-tight lg:leading-[57px] text-[#1A0E04]">
           OPERATIONALLY VALIDATED
         </h2>
 
         {/* Cards */}
-        <div className="mt-6 grid grid-cols-3 gap-x-[20px] gap-y-[24px]">
+        <div className="mt-6 grid grid-cols-1 gap-x-[20px] gap-y-[24px] sm:grid-cols-2 lg:grid-cols-3">
           {validationItems.map((item) => (
             <div
               key={item.title}
-              className="h-[180px] rounded-[20px] border border-[#EAE4D9] bg-white px-[29px] pt-[30px] shadow-[0px_2px_8px_rgba(26,14,4,0.06)]"
+              className="min-h-[180px] rounded-[20px] border border-[#EAE4D9] bg-white px-[29px] pt-[30px] shadow-[0px_2px_8px_rgba(26,14,4,0.06)]"
             >
               {/* Icon */}
               <div className="relative h-6 w-6">
@@ -73,7 +73,7 @@ export default function CateringOperationalValidation() {
               </h3>
 
               {/* Description */}
-              <p className="mt-[5px] w-[320px] font-['Poppins'] text-[12px] font-normal leading-5 text-[#8C8070]">
+              <p className="mt-[5px] w-[320px] max-w-full font-['Poppins'] text-[12px] font-normal leading-5 text-[#8C8070]">
                 {item.description}
               </p>
             </div>

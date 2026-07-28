@@ -45,7 +45,7 @@ export default function PopularFood() {
 
         {/* Heading */}
         <div className="text-center">
-          <h2 className="font-['Poppins'] text-[36px] md:text-[40px] font-semibold tracking-wider text-[#1A0E04] leading-[60.8px]">
+          <h2 className="font-['Poppins'] text-[24px] lg:text-[36px] md:text-[40px] font-semibold tracking-wider text-[#1A0E04] leading-tight lg:leading-[60.8px]">
             POPULAR FOOD ITEMS
           </h2>
         </div>

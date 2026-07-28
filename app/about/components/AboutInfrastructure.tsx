@@ -8,7 +8,7 @@ export default function AboutInfrastructure() {
       <div className="mx-auto flex h-[256px] max-w-[1440px] items-center overflow-hidden">
 
         {/* Left Image */}
-        <div className="relative h-full w-[384px] shrink-0 overflow-hidden bg-[#9A9A9A]">
+        <div className="relative h-full w-[384px] max-w-full shrink-0 overflow-hidden bg-[#9A9A9A]">
           {/* Replace with your image */}
           <Image
             src="/about/infrastructure.png"
@@ -24,8 +24,8 @@ export default function AboutInfrastructure() {
             BOLD FLAVOR. CULTURAL HERITAGE. GLOBAL INFRASTRUCTURE.
           </h2>
 
-          <p className="mt-0 w-[589px] font-['Poppins'] text-[16px] font-normal leading-6 text-white/80">
-            Operating as a trading name of Zoiko Foods Corp, we don't compete
+          <p className="mt-0 w-[589px] max-w-full font-['Poppins'] text-[16px] font-normal leading-6 text-white/80">
+            Operating as a trading name of Zoiko Foods Corp, we don&rsquo;t compete
             within the traditional boundaries of QSR or packaged food brands.
             We operate beneath them — at the infrastructure layer.
           </p>

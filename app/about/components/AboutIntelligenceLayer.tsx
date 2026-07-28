@@ -32,19 +32,19 @@ const intelligenceCards = [
 export default function AboutIntelligenceLayer() {
   return (
     <section className="w-full bg-[#FDB735]">
-      <div className="mx-auto w-full max-w-[1440px] px-[92px] py-[70px]">
+      <div className="mx-auto w-full max-w-[1440px] px-5 lg:px-[92px] py-[70px]">
 
         {/* Main Layout */}
-        <div className="flex items-start gap-[40px]">
+        <div className="flex flex-col gap-10 lg:flex-row lg:items-start lg:gap-[40px]">
 
           {/* LEFT COLUMN */}
-          <div className="w-[588px] flex-shrink-0">
+          <div className="w-[588px] max-w-full flex-shrink-0">
 
-            <h2 className="font-['Poppins'] text-[36px] font-semibold leading-[57px] text-[#2A2A2A]">
+            <h2 className="font-['Poppins'] text-[24px] lg:text-[36px] font-semibold leading-tight lg:leading-[57px] text-[#2A2A2A]">
               THE NOXX INTELLIGENCE LAYER
             </h2>
 
-            <p className="mt-0 w-[588px] font-['Poppins'] text-[16px] font-normal leading-7 text-[#454545]">
+            <p className="mt-0 w-[588px] max-w-full font-['Poppins'] text-[16px] font-normal leading-7 text-[#454545]">
               At the center of the platform is the Noxx Intelligence Layer —
               a continuously learning system that optimizes flavor, demand,
               and distribution across markets. NIL is not an ornamental AI
@@ -56,7 +56,7 @@ export default function AboutIntelligenceLayer() {
                 {intelligenceCards.map((card) => (
   <div
     key={card.title}
-    className="flex h-[112px] w-[588px] items-start rounded-[12px] border border-white/5 bg-white/10 px-[21px] py-[21px]"
+    className="flex h-[112px] w-[588px] max-w-full items-start rounded-[12px] border border-white/5 bg-white/10 px-[21px] py-[21px]"
   >
     {/* Icon */}
     <div className="flex h-[44px] w-[44px] flex-shrink-0 items-center justify-center rounded-[10px] bg-[#FFD486]">
@@ -75,7 +75,7 @@ export default function AboutIntelligenceLayer() {
         {card.title}
       </h3>
 
-      <p className="mt-[2px] w-[460px] font-['Poppins'] text-[16px] font-normal leading-5 text-[#454545E6]">
+      <p className="mt-[2px] w-[460px] max-w-full font-['Poppins'] text-[16px] font-normal leading-5 text-[#454545E6]">
         {card.description}
       </p>
     </div>
@@ -86,7 +86,7 @@ export default function AboutIntelligenceLayer() {
 
           </div>
                     {/* RIGHT IMAGE */}
-          <div className="relative h-[652px] w-[528px] flex-shrink-0 overflow-hidden rounded-[24px]">
+          <div className="relative min-h-[652px] w-[528px] max-w-full flex-shrink-0 overflow-hidden rounded-[24px]">
 
             <Image
               src="/about/intelligence-layer.png"

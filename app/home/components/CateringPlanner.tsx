@@ -45,7 +45,7 @@ export default function CateringPlanner() {
           {/* Left Side */}
           <div className="w-full xl:max-w-[640px]">
 
-            <h2 className="font-['Poppins'] text-[38px] font-normal uppercase tracking-wider leading-[64.6px] text-[#1A0E04] whitespace-nowrap">
+            <h2 className="font-['Poppins'] text-[24px] lg:text-[38px] font-normal uppercase tracking-wider leading-tight lg:leading-[64.6px] text-[#1A0E04] whitespace-nowrap">
               FEED 10 TO 300. EFFORTLESSLY.
             </h2>
 
@@ -96,7 +96,7 @@ export default function CateringPlanner() {
               </h3>
 
               <p className="mt-1 font-['Poppins'] text-sm text-white/40">
-                Tell us your event — we'll build the perfect menu.
+                Tell us your event — we&rsquo;ll build the perfect menu.
               </p>
 
               {/* Event Size */}

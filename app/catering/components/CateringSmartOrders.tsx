@@ -29,7 +29,7 @@ export default function CateringSmartOrders() {
       <div className="mx-auto max-w-[1440px] px-[32px]">
 
         {/* Heading */}
-        <h2 className="text-center font-['Poppins'] text-[36px] font-semibold leading-[57px] text-white">
+        <h2 className="text-center font-['Poppins'] text-[24px] lg:text-[36px] font-semibold leading-tight lg:leading-[57px] text-white">
           EVERY ORDER GETS SMARTER
         </h2>
 
@@ -41,11 +41,11 @@ export default function CateringSmartOrders() {
         </p>
 
         {/* Cards */}
-        <div className="mt-10 grid grid-cols-3 gap-[20px]">
+        <div className="mt-10 grid grid-cols-1 gap-[20px] sm:grid-cols-2 lg:grid-cols-3">
           {smartOrderCards.map((card) => (
             <div
               key={card.title}
-              className="flex h-[200px] flex-col items-center rounded-[20px] border border-[#EAE4D9] bg-white px-10 pt-[31px] text-center shadow-[0px_2px_8px_rgba(26,14,4,0.06)]"
+              className="flex min-h-[200px] flex-col items-center rounded-[20px] border border-[#EAE4D9] bg-white px-10 pt-[31px] text-center shadow-[0px_2px_8px_rgba(26,14,4,0.06)]"
             >
               {/* Icon */}
               <div className="relative h-8 w-8">

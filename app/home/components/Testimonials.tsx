@@ -38,7 +38,7 @@ export default function Testimonials() {
       <div className="mx-auto max-w-[1440px] px-5 lg:px-[75px]">
 
         {/* Heading */}
-        <h2 className="text-center text-[64px] font-bold uppercase tracking-wider leading-[60.8px] text-[#1A0E04] font-['Bebas_Neue']">
+        <h2 className="text-center text-[36px] lg:text-[64px] font-bold uppercase tracking-wider leading-tight lg:leading-[60.8px] text-[#1A0E04] font-['Bebas_Neue']">
           WHAT THEY SAY.
         </h2>
 
@@ -61,7 +61,7 @@ export default function Testimonials() {
 
               {/* Review */}
               <p className="mt-4 min-h-[96px] text-base leading-6 text-[#1A0E04] font-['DM_Sans']">
-                "{item.review}"
+                &ldquo;{item.review}&rdquo;
               </p>
 
               {/* Author */}

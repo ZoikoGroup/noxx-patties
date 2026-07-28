@@ -83,7 +83,7 @@ export default function PopularProducts() {
       <div className="mx-auto max-w-[1440px] px-5 lg:px-[75px]">
 
         {/* Heading */}
-        <h2 className="text-center font-['Poppins'] text-[39px] font-semibold uppercase tracking-wider leading-[77px] text-[#212121]">
+        <h2 className="text-center font-['Poppins'] text-[26px] lg:text-[39px] font-semibold uppercase tracking-wider leading-tight lg:leading-[77px] text-[#212121]">
           Popular Food Items
         </h2>
 

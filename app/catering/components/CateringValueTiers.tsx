@@ -48,10 +48,10 @@ const valueTiers = [
 export default function CateringValueTiers() {
   return (
     <section className="w-full bg-[#E0E8D7] py-[40px]">
-      <div className="mx-auto max-w-[1440px] px-[92px]">
+      <div className="mx-auto max-w-[1440px] px-5 lg:px-[92px]">
 
         {/* Heading */}
-        <h2 className="text-center font-['Poppins'] text-[36px] font-semibold leading-[57px] text-[#373737]">
+        <h2 className="text-center font-['Poppins'] text-[24px] lg:text-[36px] font-semibold leading-tight lg:leading-[57px] text-[#373737]">
           STEP UP YOUR VALUE TIER
         </h2>
 
@@ -63,11 +63,11 @@ export default function CateringValueTiers() {
         </p>
 
         {/* Cards */}
-        <div className="mt-10 grid grid-cols-3 gap-[20px]">
+        <div className="mt-10 grid grid-cols-1 gap-[20px] sm:grid-cols-2 lg:grid-cols-3">
                       {valueTiers.map((tier) => (
             <div
               key={tier.title}
-              className="relative h-[340px] rounded-[20px] border border-[#AEAEAE] bg-[#3C893F] p-[33px]"
+              className="relative min-h-[340px] rounded-[20px] border border-[#AEAEAE] bg-[#3C893F] p-[33px]"
             >
               {/* Most Popular Badge */}
               {tier.popular && (
@@ -90,7 +90,7 @@ export default function CateringValueTiers() {
               </p>
 
               {/* Title */}
-              <h3 className="mt-0 font-['Bebas_Neue'] text-[32px] font-normal text-white">
+              <h3 className="mt-0 font-['Bebas_Neue'] text-[24px] lg:text-[32px] font-normal text-white">
                 {tier.title}
               </h3>
 
@@ -101,7 +101,7 @@ export default function CateringValueTiers() {
 
               {/* Price */}
               <div
-                className={`mt-2 font-['Bebas_Neue'] text-[40px] leading-10 ${
+                className={`mt-2 font-['Bebas_Neue'] text-[26px] lg:text-[40px] leading-10 ${
                   tier.accent === "amber"
                     ? "text-[#E8920A]"
                     : tier.accent === "green"

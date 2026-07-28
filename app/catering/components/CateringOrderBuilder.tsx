@@ -8,10 +8,10 @@ export default function CateringOrderBuilder() {
       <div className="mx-auto flex justify-center">
 
         {/* Form Card */}
-        <div className="h-[582px] w-[846px] rounded-[20px] bg-[#3C893F] px-10 pt-10 shadow-[0px_20px_48px_rgba(26,14,4,0.14)]">
+        <div className="min-h-[582px] w-[846px] max-w-full rounded-[20px] bg-[#3C893F] px-10 pt-10 shadow-[0px_20px_48px_rgba(26,14,4,0.14)]">
 
           {/* Heading */}
-          <h2 className="font-['Bebas_Neue'] text-[32px] font-normal text-white">
+          <h2 className="font-['Bebas_Neue'] text-[24px] lg:text-[32px] font-normal text-white">
             Build Your Order
           </h2>
 
@@ -21,7 +21,7 @@ export default function CateringOrderBuilder() {
           </p>
 
           {/* Form */}
-          <div className="mt-8 grid grid-cols-2 gap-x-10 gap-y-6">
+          <div className="mt-8 grid grid-cols-1 gap-x-10 gap-y-6 sm:grid-cols-2">
                         {/* Event Type */}
             <div>
               <label className="mb-2 block font-['Poppins'] text-[12px] font-bold uppercase tracking-wide text-white/80">
