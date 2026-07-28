@@ -45,10 +45,10 @@ const foodSystems = [
 export default function AboutFoodSystem() {
   return (
     <section className="w-full border-t border-[#EAE4D9] bg-[#E0E8D7] py-[46px]">
-      <div className="mx-auto max-w-[1440px] px-[92px]">
+      <div className="mx-auto max-w-[1440px] px-5 lg:px-[92px]">
 
         {/* Heading */}
-        <h2 className="text-center font-['Poppins'] text-[36px] font-semibold leading-[57px] tracking-wider text-[#3C893F]">
+        <h2 className="text-center font-['Poppins'] text-[24px] lg:text-[36px] font-semibold leading-tight lg:leading-[57px] tracking-wider text-[#3C893F]">
           THE NOXX FOOD SYSTEM
         </h2>
 
@@ -60,11 +60,11 @@ export default function AboutFoodSystem() {
         </p>
 
         {/* Cards */}
-        <div className="mt-10 grid grid-cols-3 gap-x-[50px] gap-y-[19px]">
+        <div className="mt-10 grid grid-cols-1 gap-x-[50px] gap-y-[19px] sm:grid-cols-2 lg:grid-cols-3">
             {foodSystems.map((item) => (
   <div
     key={item.title}
-    className="relative h-[128px] w-[364px] rounded-[20px] border border-[#EAE4D9] bg-white shadow-[0px_2px_8px_rgba(26,14,4,0.06)]"
+    className="relative h-[128px] w-[364px] max-w-full rounded-[20px] border border-[#EAE4D9] bg-white shadow-[0px_2px_8px_rgba(26,14,4,0.06)]"
   >
     <div className="flex h-full items-center px-[20px]">
 
@@ -85,7 +85,7 @@ export default function AboutFoodSystem() {
           {item.title}
         </h3>
 
-        <p className="mt-[3px] w-[272px] font-['Poppins'] text-[13px] font-normal leading-5 text-[#8C8070]">
+        <p className="mt-[3px] w-[272px] max-w-full font-['Poppins'] text-[13px] font-normal leading-5 text-[#8C8070]">
           {item.description}
         </p>
 

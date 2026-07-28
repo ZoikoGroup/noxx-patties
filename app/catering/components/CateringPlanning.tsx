@@ -37,10 +37,10 @@ const planningCards = [
 export default function CateringPlanning() {
   return (
     <section className="w-full border-t border-[#EAE4D9] bg-[#FDB735] py-[36px]">
-      <div className="mx-auto max-w-[1440px] px-[92px]">
+      <div className="mx-auto max-w-[1440px] px-5 lg:px-[92px]">
 
         {/* Heading */}
-        <h2 className="text-center font-['Poppins'] text-[36px] font-semibold leading-[57px] text-[#1A0E04]">
+        <h2 className="text-center font-['Poppins'] text-[24px] lg:text-[36px] font-semibold leading-tight lg:leading-[57px] text-[#1A0E04]">
           WHAT ARE YOU PLANNING?
         </h2>
 
@@ -51,11 +51,11 @@ export default function CateringPlanning() {
         </p>
 
         {/* Cards */}
-        <div className="mt-8 grid grid-cols-4 gap-[30px]">
+        <div className="mt-8 grid grid-cols-1 gap-[30px] sm:grid-cols-2 lg:grid-cols-4">
             {planningCards.map((card) => (
   <div
     key={card.title}
-    className={`relative h-[220px] w-[268px] rounded-[20px] bg-white ${
+    className={`relative min-h-[220px] w-[268px] max-w-full rounded-[20px] bg-white ${
       card.featured
         ? "shadow-[0px_0px_0px_3px_rgba(232,146,10,0.10)]"
         : "border-2 border-[#EAE4D9]"

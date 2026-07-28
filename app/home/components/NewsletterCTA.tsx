@@ -13,7 +13,7 @@ export default function NewsletterCTA() {
           <div className="flex w-full flex-col justify-center px-6 py-12 lg:w-[656px] lg:px-[92px]">
 
             {/* Heading */}
-            <h2 className="font-['Bebas_Neue'] text-[56px] leading-[64.6px] text-white lg:text-7xl">
+            <h2 className="font-['Bebas_Neue'] text-[30px] lg:text-[56px] leading-tight lg:leading-[64.6px] text-white lg:text-7xl">
               JOIN THE
               <br />
               FLAVOR
@@ -22,7 +22,7 @@ export default function NewsletterCTA() {
             </h2>
 
             {/* Description */}
-            <p className="mt-4 w-[440px]  font-['DM_Sans'] text-base leading-6 text-white/80">
+            <p className="mt-4 w-[440px] max-w-full  font-['DM_Sans'] text-base leading-6 text-white/80">
               Get early access to new products, first-order discount,
               and exclusive offers from the Noxx Patties community.
             </p>

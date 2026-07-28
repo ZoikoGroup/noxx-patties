@@ -42,10 +42,10 @@ const advantageCards = [
 export default function AboutSystemAdvantage() {
   return (
     <section className="w-full border-t border-[#EAE4D9] bg-[#FFF5E8] py-10">
-      <div className="mx-auto max-w-[1440px] px-[92px]">
+      <div className="mx-auto max-w-[1440px] px-5 lg:px-[92px]">
 
         {/* Heading */}
-        <h2 className="text-center font-['Poppins'] text-[36px] font-semibold tracking-wider leading-[57px] text-[#1A0E04]">
+        <h2 className="text-center font-['Poppins'] text-[24px] lg:text-[36px] font-semibold tracking-wider leading-tight lg:leading-[57px] text-[#1A0E04]">
           THE SYSTEM ADVANTAGE
         </h2>
 
@@ -63,7 +63,7 @@ export default function AboutSystemAdvantage() {
               className="rounded-[20px] border border-[#EAE4D9] bg-white px-[15px] pt-[30px] pb-[25px] shadow-[0px_2px_8px_rgba(26,14,4,0.06)]"
             >
               {/* Number */}
-              <div className="font-['Bebas_Neue'] text-[56px] leading-[56px] text-[#E8920A]">
+              <div className="font-['Bebas_Neue'] text-[30px] lg:text-[56px] leading-tight lg:leading-[56px] text-[#E8920A]">
                 {card.number}
               </div>
 

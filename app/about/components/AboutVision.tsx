@@ -28,14 +28,14 @@ const visionPoints = [
 export default function AboutVision() {
   return (
     <section className="w-full bg-[#3C893F] py-[58px]">
-      <div className="mx-auto max-w-[1440px] px-[92px]">
+      <div className="mx-auto max-w-[1440px] px-5 lg:px-[92px]">
 
-        <div className="flex items-start justify-between gap-5">
+        <div className="flex flex-col gap-10 lg:flex-row lg:items-start lg:justify-between lg:gap-5">
 
           {/* Left Content */}
-          <div className="w-[588px]">
+          <div className="w-[588px] max-w-full">
 
-            <h2 className="font-['Poppins'] text-[36px] font-semibold leading-[57px] text-white">
+            <h2 className="font-['Poppins'] text-[24px] lg:text-[36px] font-semibold leading-tight lg:leading-[57px] text-white">
               BUILDING FOR THE
               <br />
               NEXT PHASE OF
@@ -43,7 +43,7 @@ export default function AboutVision() {
               THE FOOD SYSTEM.
             </h2>
 
-            <p className="mt-3 w-[511px] font-['Poppins'] text-[16px] font-normal leading-7 text-white/40">
+            <p className="mt-3 w-[511px] max-w-full font-['Poppins'] text-[16px] font-normal leading-7 text-white/40">
               We are not building for the present market alone. Our long-term
               vision is a world in which culturally authentic food is no longer
               marginalized as niche, but recognized as mainstream, scalable,
@@ -83,7 +83,7 @@ export default function AboutVision() {
         </div>
 
         {/* Right Image */}
-        <div className="relative h-[600px] w-[588px] overflow-hidden rounded-[20px] border border-white/10 bg-[#A3A3A3] flex-shrink-0">
+        <div className="relative min-h-[600px] w-[588px] max-w-full overflow-hidden rounded-[20px] border border-white/10 bg-[#A3A3A3] flex-shrink-0">
           <Image
             src="/about/vision.png"
             alt="Future of the food system"

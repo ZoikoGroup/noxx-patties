@@ -82,7 +82,7 @@ export default function BusinessSolutions() {
       <div className="mx-auto max-w-[1440px] px-5 lg:px-[75px]">
 
         {/* Heading */}
-        <h2 className="text-center font-['Poppins'] text-[36px] font-semibold uppercase tracking-wider leading-[60.8px] text-[#1A0E04]">
+        <h2 className="text-center font-['Poppins'] text-[24px] lg:text-[36px] font-semibold uppercase tracking-wider leading-tight lg:leading-[60.8px] text-[#1A0E04]">
           STOCK WHAT SELLS BACKED BY DATA
         </h2>
 
@@ -163,7 +163,7 @@ export default function BusinessSolutions() {
         {/* Metrics Banner */}
 <div className="mt-16 rounded-[20px] bg-[#3C893F] px-10 py-12 lg:px-10"><div className="grid grid-cols-1 gap-8 lg:grid-cols-[1fr_1fr_1.4fr_1.4fr]">    {/* Fill Rate */}
     <div>
-      <h3 className="font-['Poppins'] text-[48px] font-semibold leading-[48px] text-[#E8920A]">
+      <h3 className="font-['Poppins'] text-[30px] lg:text-[48px] font-semibold leading-tight lg:leading-[48px] text-[#E8920A]">
         98%
       </h3>
 
@@ -178,7 +178,7 @@ export default function BusinessSolutions() {
 
     {/* Delivery SLA */}
     <div>
-      <h3 className="font-['Poppins'] text-[48px] font-semibold leading-[48px] text-[#E8920A]">
+      <h3 className="font-['Poppins'] text-[30px] lg:text-[48px] font-semibold leading-tight lg:leading-[48px] text-[#E8920A]">
         48h
       </h3>
 
@@ -193,7 +193,7 @@ export default function BusinessSolutions() {
 
     {/* Ingredient Traceability */}
     <div>
-      <h3 className="font-['Poppins'] text-[48px] font-semibold leading-[48px] text-[#E8920A]">
+      <h3 className="font-['Poppins'] text-[30px] lg:text-[48px] font-semibold leading-tight lg:leading-[48px] text-[#E8920A]">
         QR
       </h3>
 
@@ -208,7 +208,7 @@ export default function BusinessSolutions() {
 
     {/* Cold Chain */}
     <div>
-      <h3 className="font-['Poppins'] text-5xl font-semibold leading-[48px] text-[#E8920A]">
+      <h3 className="font-['Poppins'] text-5xl font-semibold leading-tight lg:leading-[48px] text-[#E8920A]">
         -18°C
       </h3>
 

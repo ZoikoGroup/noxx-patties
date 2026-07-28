@@ -36,10 +36,10 @@ const participants = [
 export default function AboutParticipants() {
   return (
     <section className="w-full bg-[#FDFAF6] py-[67px]">
-      <div className="mx-auto max-w-[1440px] px-[60px]">
+      <div className="mx-auto max-w-[1440px] px-5 lg:px-[60px]">
 
         {/* Heading */}
-        <h2 className="text-center font-['Poppins'] text-[36px] font-semibold leading-[57px] tracking-wider text-[#1A0E04]">
+        <h2 className="text-center font-['Poppins'] text-[24px] lg:text-[36px] font-semibold leading-tight lg:leading-[57px] tracking-wider text-[#1A0E04]">
           BUILT FOR EVERY PARTICIPANT
         </h2>
 
@@ -51,11 +51,11 @@ export default function AboutParticipants() {
         </p>
 
         {/* Cards */}
-        <div className="mt-10 grid grid-cols-2 gap-x-[20px] gap-y-[24px]">
+        <div className="mt-10 grid grid-cols-1 gap-x-[20px] gap-y-[24px] md:grid-cols-2">
             {participants.map((item) => (
   <div
     key={item.tag}
-    className="relative h-[236px] w-[565px] overflow-hidden rounded-[20px] border border-[#EAE4D9] bg-white shadow-[0px_2px_8px_rgba(26,14,4,0.06)]"
+    className="relative min-h-[236px] w-[565px] max-w-full overflow-hidden rounded-[20px] border border-[#EAE4D9] bg-white shadow-[0px_2px_8px_rgba(26,14,4,0.06)]"
   >
     {/* Left Accent */}
     <div className="absolute left-0 top-0 h-full w-1 bg-[#E8920A]" />
