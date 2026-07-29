@@ -1,4 +1,5 @@
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 import AboutHero from "./components/AboutHero";
 import AboutWhy from "./components/AboutWhy";
@@ -27,7 +28,7 @@ export default function AboutPage() {
         <AboutCTA />
       </main>
 
-      
+      <Footer />
     </>
   );
 }
