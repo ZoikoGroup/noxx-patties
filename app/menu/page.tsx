@@ -1,15 +1,14 @@
-import "./components/menu.css";
-
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 import MenuHero from "./components/MenuHero";
-import MenuTicker from "./components/MenuTicker";
-import MenuCurated from "./components/MenuCurated";
-import MenuPopularItems from "./components/MenuPopularItems";
-import MenuBusinessData from "./components/MenuBusinessData";
-import MenuTopSellers from "./components/MenuTopSellers";
-import MenuReadyToOrder from "./components/MenuReadyToOrder";
+import MenuDeliveryBar from "./components/MenuDeliveryBar";
+import MenuMostOrdered from "./components/MenuMostOrdered";
+import MenuMealBuilder from "./components/MenuMealBuilder";
+import MenuExploreRange from "./components/MenuExploreRange";
+import MenuDeals from "./components/MenuDeals";
+import MenuAddOns from "./components/MenuAddOns";
+import MenuReorder from "./components/MenuReorder";
 
 export default function MenuPage() {
   return (
@@ -18,12 +17,13 @@ export default function MenuPage() {
 
       <main className="bg-[#FFFAF4]">
         <MenuHero />
-        <MenuTicker />
-        <MenuCurated />
-        <MenuPopularItems />
-        <MenuBusinessData />
-        <MenuTopSellers />
-        <MenuReadyToOrder />
+        <MenuDeliveryBar />
+        <MenuMostOrdered />
+        <MenuMealBuilder />
+        <MenuExploreRange />
+        <MenuDeals />
+        <MenuAddOns />
+        <MenuReorder />
       </main>
 
       <Footer />

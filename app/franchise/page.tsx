@@ -1,5 +1,5 @@
 import Header from "@/components/Header";
-
+import Footer from "@/components/Footer";
 
 import FranchiseHero from "./components/FranchiseHero";
 import FranchiseFormats from "./components/FranchiseFormats";
@@ -26,8 +26,7 @@ export default function FranchisePage() {
         <FranchiseCTA />
       </main>
 
-
-      
+      <Footer />
     </>
   );
 }

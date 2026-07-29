@@ -1,4 +1,5 @@
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import Hero from "./home/components/Hero";
 import AnnouncementBar from "./home/components/AnnouncementBar";
 import PopularFood from "./home/components/PopularFood";
@@ -29,6 +30,7 @@ export default function Home() {
       <BusinessSolutions />
       <Testimonials />
       <NewsletterCTA />
+      <Footer />
     </>
   );
 }

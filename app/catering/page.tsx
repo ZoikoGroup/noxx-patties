@@ -1,6 +1,7 @@
 import "./components/catering.css";
 
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 import CateringHero from "./components/CateringHero";
 import CateringTicker from "./components/CateringTicker";
@@ -27,7 +28,7 @@ export default function CateringPage() {
         <CateringCTA />
       </main>
 
-     
+      <Footer />
     </>
   );
 }
