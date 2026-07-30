@@ -1,6 +1,9 @@
 export default function WholesaleDistributionApplication() {
   return (
-    <section className="w-full border-t border-[#EAE4D9] bg-[#F5F1EA] py-16 lg:py-20">
+    <section
+      id="distribution-application"
+      className="w-full scroll-mt-16 border-t border-[#EAE4D9] bg-[#F5F1EA] py-16 lg:py-20"
+    >
       <div className="mx-auto max-w-[1440px] px-6 lg:px-[92px]">
         {/* Heading */}
         <h2 className="text-center font-[Poppins] text-3xl font-semibold leading-tight text-[#1A0E04] lg:text-4xl lg:leading-[57px]">

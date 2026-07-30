@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function ProductsHero() {
   return (
     <section className="relative w-full overflow-hidden bg-[#3C893F] py-24">
@@ -17,13 +19,19 @@ export default function ProductsHero() {
         </p>
 
         <div className="mt-10 flex flex-wrap items-center justify-center gap-6">
-          <button className="h-14 w-64 rounded-[50px] bg-[#E8920A] font-['Poppins'] text-base font-bold text-white shadow-[0px_6px_20px_rgba(232,146,10,0.40)] transition hover:bg-[#d98509]">
+          <Link
+            href="/shop#build-your-box"
+            className="flex h-14 w-64 items-center justify-center rounded-[50px] bg-[#E8920A] font-['Poppins'] text-base font-bold text-white shadow-[0px_6px_20px_rgba(232,146,10,0.40)] transition hover:bg-[#d98509]"
+          >
             Build My Box
-          </button>
+          </Link>
 
-          <button className="h-14 w-60 rounded-[50px] border border-white font-['Poppins'] text-base font-semibold text-white transition hover:bg-white/10">
+          <Link
+            href="/shop"
+            className="flex h-14 w-60 items-center justify-center rounded-[50px] border border-white font-['Poppins'] text-base font-semibold text-white transition hover:bg-white/10"
+          >
             Browse All
-          </button>
+          </Link>
         </div>
       </div>
     </section>

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function ProductsReadyToOrder() {
   return (
     <section className="w-full bg-[#E8920A] py-14">
@@ -17,9 +19,12 @@ export default function ProductsReadyToOrder() {
             🍔 Add Recommended Box
           </button>
 
-          <button className="h-14 w-full rounded-[50px] border-2 border-white/50 font-['Poppins'] text-base font-semibold text-white transition hover:bg-white/10">
+          <Link
+            href="/wholesale"
+            className="flex h-14 w-full items-center justify-center rounded-[50px] border-2 border-white/50 font-['Poppins'] text-base font-semibold text-white transition hover:bg-white/10"
+          >
             For Business →
-          </button>
+          </Link>
         </div>
       </div>
     </section>

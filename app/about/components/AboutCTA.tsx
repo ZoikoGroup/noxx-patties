@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 export default function AboutCTA() {
   return (
     <section className="w-full bg-[#FDB735]">
@@ -21,13 +23,19 @@ export default function AboutCTA() {
         {/* Right Buttons */}
         <div className="flex w-full shrink-0 flex-col gap-6 lg:w-auto">
 
-          <button className="h-[56px] w-[384px] max-w-full rounded-full bg-black font-['Poppins'] text-[18px] font-bold text-[#FDB735] transition-all duration-300 hover:scale-[1.02]">
+          <Link
+            href="/shop"
+            className="flex h-[56px] w-[384px] max-w-full items-center justify-center rounded-full bg-black font-['Poppins'] text-[18px] font-bold text-[#FDB735] transition-all duration-300 hover:scale-[1.02]"
+          >
             Order Now
-          </button>
+          </Link>
 
-          <button className="h-[56px] w-[384px] max-w-full rounded-full border-2 border-[#373737]/50 bg-transparent font-['Poppins'] text-[18px] font-semibold text-[#373737] transition-all duration-300 hover:bg-black/5">
+          <Link
+            href="/franchise"
+            className="flex h-[56px] w-[384px] max-w-full items-center justify-center rounded-full border-2 border-[#373737]/50 bg-transparent font-['Poppins'] text-[18px] font-semibold text-[#373737] transition-all duration-300 hover:bg-black/5"
+          >
             Become a Partner →
-          </button>
+          </Link>
 
         </div>
 

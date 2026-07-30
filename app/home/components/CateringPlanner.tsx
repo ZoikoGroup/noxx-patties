@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 const services = [
   {
@@ -166,9 +167,12 @@ export default function CateringPlanner() {
               </div>
 
               {/* Button */}
-              <button className="mt-6 flex h-12 w-full items-center justify-center rounded-xl bg-[#E8920A] font-['Poppins'] text-base font-bold text-white shadow-[0px_4px_14px_rgba(232,146,10,0.40)] transition-all duration-300 hover:bg-[#d98608]">
+              <Link
+                href="/catering"
+                className="mt-6 flex h-12 w-full items-center justify-center rounded-xl bg-[#E8920A] font-['Poppins'] text-base font-bold text-white shadow-[0px_4px_14px_rgba(232,146,10,0.40)] transition-all duration-300 hover:bg-[#d98608]"
+              >
                 Generate My Menu Plan →
-              </button>
+              </Link>
 
             </div>
 

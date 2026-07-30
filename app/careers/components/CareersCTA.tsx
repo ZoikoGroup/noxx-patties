@@ -21,7 +21,7 @@ export default function CareersCTA() {
         {/* Buttons */}
         <div className="flex w-full flex-col gap-[21px] lg:w-[384px] lg:shrink-0">
           <a
-            href="#"
+            href="mailto:info@noxxpatties.com"
             className="flex h-14 items-center justify-center rounded-full bg-white font-[Poppins] text-sm font-bold text-[#E8920A] transition hover:bg-[#1A0E04] hover:text-white"
           >
             Apply Now

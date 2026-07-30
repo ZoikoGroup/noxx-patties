@@ -40,7 +40,7 @@ export default function CareersApply() {
 
           {/* Apply Button */}
           <a
-            href="#"
+            href="mailto:info@noxxpatties.com"
             className="mx-auto mt-[23px] flex h-14 w-full max-w-[384px] items-center justify-center rounded-full bg-[#E8920A] font-[Poppins] text-base font-bold text-white shadow-[0px_6px_20px_rgba(232,146,10,0.40)] transition hover:opacity-90"
           >
             Apply Now →

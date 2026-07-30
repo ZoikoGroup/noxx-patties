@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const cateringTypes = [
   {
@@ -136,9 +137,12 @@ export default function LocationsCatering() {
           </div>
 
           {/* Button */}
-          <button className="mt-[19px] flex h-12 w-full items-center justify-center rounded-xl bg-[#E8920A] font-[Poppins] text-base font-bold text-white shadow-[0px_4px_14px_rgba(232,146,10,0.40)] transition hover:opacity-90">
+          <Link
+            href="/catering"
+            className="mt-[19px] flex h-12 w-full items-center justify-center rounded-xl bg-[#E8920A] font-[Poppins] text-base font-bold text-white shadow-[0px_4px_14px_rgba(232,146,10,0.40)] transition hover:opacity-90"
+          >
             Check Availability →
-          </button>
+          </Link>
         </div>
       </div>
     </section>

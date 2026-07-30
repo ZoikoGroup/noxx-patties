@@ -21,13 +21,19 @@ export default function PlatformCTA() {
 
         {/* Buttons */}
         <div className="flex w-full flex-col gap-4 sm:w-auto">
-          <button className="flex h-12 items-center justify-center rounded-full bg-white px-10 font-[Poppins] text-base font-bold text-[#E8920A] transition hover:bg-[#1A0E04] hover:text-white">
+          <a
+            href="mailto:info@noxxpatties.com"
+            className="flex h-12 items-center justify-center rounded-full bg-white px-10 font-[Poppins] text-base font-bold text-[#E8920A] transition hover:bg-[#1A0E04] hover:text-white"
+          >
             Request CTO Briefing
-          </button>
+          </a>
 
-          <button className="flex h-12 items-center justify-center rounded-full border-2 border-white px-10 font-[Poppins] text-base font-semibold text-white transition hover:bg-white hover:text-[#E8920A]">
+          <a
+            href="mailto:info@noxxpatties.com"
+            className="flex h-12 items-center justify-center rounded-full border-2 border-white px-10 font-[Poppins] text-base font-semibold text-white transition hover:bg-white hover:text-[#E8920A]"
+          >
             Investor Documentation
-          </button>
+          </a>
         </div>
       </div>
     </section>

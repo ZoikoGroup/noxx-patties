@@ -5,12 +5,12 @@ import Link from "next/link";
 import { Menu } from "lucide-react";
 
 const navItems = [
-  { label: "Menu", href: "#" },
-  { label: "Order", href: "#" },
-  { label: "Locations", href: "#" },
-  { label: "Catering", href: "#" },
-  { label: "Business", href: "#" },
-  { label: "About", href: "#" },
+  { label: "Menu", href: "/menu" },
+  { label: "Order", href: "/shop" },
+  { label: "Locations", href: "/locations" },
+  { label: "Catering", href: "/catering" },
+  { label: "Business", href: "/wholesale" },
+  { label: "About", href: "/about" },
 ];
 
 export default function Header() {
@@ -62,9 +62,12 @@ export default function Header() {
           </div>
 
           {/* Desktop Button */}
-          <button className="hidden lg:flex h-10 items-center justify-center rounded-full bg-[#D12525] px-8 text-sm font-bold text-white shadow-[0_4px_12px_rgba(209,37,37,0.30)] hover:bg-[#b61f1f] transition">
+          <Link
+            href="/shop"
+            className="hidden lg:flex h-10 items-center justify-center rounded-full bg-[#D12525] px-8 text-sm font-bold text-white shadow-[0_4px_12px_rgba(209,37,37,0.30)] hover:bg-[#b61f1f] transition"
+          >
             Order Now
-          </button>
+          </Link>
 
           {/* Desktop Market Selector */}
           <button className="hidden lg:block text-base font-medium text-[#D12525] underline underline-offset-2">

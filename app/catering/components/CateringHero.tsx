@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 export default function CateringHero() {
   return (
     <section className="relative w-full overflow-hidden bg-[#3C893F]">
@@ -41,13 +43,19 @@ export default function CateringHero() {
           {/* Buttons */}
           <div className="mt-4 flex items-center gap-4">
 
-            <button className="flex h-12 w-64 items-center justify-center rounded-full bg-[#E8920A] font-['Arial'] text-[16px] font-bold text-white shadow-[0px_6px_20px_rgba(232,146,10,0.40)] transition-all duration-300 hover:scale-[1.02]">
+            <Link
+              href="/shop"
+              className="flex h-12 w-64 items-center justify-center rounded-full bg-[#E8920A] font-['Arial'] text-[16px] font-bold text-white shadow-[0px_6px_20px_rgba(232,146,10,0.40)] transition-all duration-300 hover:scale-[1.02]"
+            >
               Order Now
-            </button>
+            </Link>
 
-            <button className="flex h-12 w-64 items-center justify-center rounded-full border border-white bg-transparent font-['Arial'] text-[16px] font-bold text-white transition-all duration-300 hover:bg-white hover:text-[#3C893F]">
+            <Link
+              href="/wholesale"
+              className="flex h-12 w-64 items-center justify-center rounded-full border border-white bg-transparent font-['Arial'] text-[16px] font-bold text-white transition-all duration-300 hover:bg-white hover:text-[#3C893F]"
+            >
               For Business Supply
-            </button>
+            </Link>
 
           </div>
 

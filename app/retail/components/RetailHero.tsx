@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function RetailHero() {
   return (
     <section className="relative w-full overflow-hidden bg-[#5B8A34] py-16 lg:py-[77px]">
@@ -19,13 +21,19 @@ export default function RetailHero() {
 
         {/* Buttons */}
         <div className="mt-8 flex w-full flex-col gap-4 sm:w-auto sm:flex-row lg:mt-12">
-          <button className="flex h-12 items-center justify-center whitespace-nowrap rounded-full bg-[#E8920A] px-10 font-[Poppins] text-sm font-bold text-white shadow-[0px_6px_20px_rgba(232,146,10,0.40)] transition hover:opacity-90">
+          <Link
+            href="/help"
+            className="flex h-12 items-center justify-center whitespace-nowrap rounded-full bg-[#E8920A] px-10 font-[Poppins] text-sm font-bold text-white shadow-[0px_6px_20px_rgba(232,146,10,0.40)] transition hover:opacity-90"
+          >
             Start Your Retail Supply Plan
-          </button>
+          </Link>
 
-          <button className="flex h-12 items-center justify-center whitespace-nowrap rounded-full border border-white bg-white/10 px-10 font-[Poppins] text-sm font-semibold text-white transition hover:bg-white hover:text-[#5B8A34]">
+          <Link
+            href="/help"
+            className="flex h-12 items-center justify-center whitespace-nowrap rounded-full border border-white bg-white/10 px-10 font-[Poppins] text-sm font-semibold text-white transition hover:bg-white hover:text-[#5B8A34]"
+          >
             Speak to the Team
-          </button>
+          </Link>
         </div>
       </div>
     </section>

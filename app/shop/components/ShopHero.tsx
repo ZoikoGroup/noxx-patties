@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const features = [
   "Clean-label approach",
   "Bold Caribbean flavour",
@@ -25,17 +27,26 @@ export default function ShopHero() {
 
         {/* Buttons */}
         <div className="mt-7 flex w-full flex-col gap-4 sm:w-auto sm:flex-row lg:mt-10">
-          <button className="flex h-12 items-center justify-center rounded-full bg-[#E8920A] px-8 font-[Poppins] text-sm font-bold text-white shadow-[0px_6px_20px_rgba(232,146,10,0.40)] transition hover:opacity-90">
+          <Link
+            href="/menu"
+            className="flex h-12 items-center justify-center rounded-full bg-[#E8920A] px-8 font-[Poppins] text-sm font-bold text-white shadow-[0px_6px_20px_rgba(232,146,10,0.40)] transition hover:opacity-90"
+          >
             Order Now
-          </button>
+          </Link>
 
-          <button className="flex h-12 items-center justify-center rounded-full border border-white/20 bg-white/10 px-8 font-[Poppins] text-sm font-semibold text-white transition hover:bg-white hover:text-[#4B893A]">
+          <a
+            href="#essentials"
+            className="flex h-12 items-center justify-center rounded-full border border-white/20 bg-white/10 px-8 font-[Poppins] text-sm font-semibold text-white transition hover:bg-white hover:text-[#4B893A]"
+          >
             Start with Bestsellers
-          </button>
+          </a>
 
-          <button className="flex h-12 items-center justify-center rounded-full border border-white/20 bg-white/10 px-8 font-[Poppins] text-sm font-semibold text-white transition hover:bg-white hover:text-[#4B893A]">
+          <a
+            href="#build-your-box"
+            className="flex h-12 items-center justify-center rounded-full border border-white/20 bg-white/10 px-8 font-[Poppins] text-sm font-semibold text-white transition hover:bg-white hover:text-[#4B893A]"
+          >
             Build Your Box
-          </button>
+          </a>
         </div>
 
         {/* Feature List */}

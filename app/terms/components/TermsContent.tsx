@@ -158,7 +158,7 @@ const sections: Section[] = [
             By using the platform, you consent to such data usage in accordance
             with our{" "}
             <a
-              href="#"
+              href="/privacy"
               className="font-semibold text-[#E8920A] underline hover:opacity-80"
             >
               Privacy Policy
@@ -266,7 +266,7 @@ function TermsBlock({ block }: { block: Block }) {
       <p className="mt-[6px] font-[Poppins] text-sm font-normal leading-6 text-[#4A3F32]">
         →{" "}
         <a
-          href="#"
+          href="/help"
           className="font-semibold text-[#E8920A] underline hover:opacity-80"
         >
           Help Centre

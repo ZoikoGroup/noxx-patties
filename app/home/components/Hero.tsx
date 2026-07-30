@@ -37,14 +37,14 @@ export default function Hero() {
         <div className="mt-12 flex flex-col gap-5 md:flex-row">
 
           <Link
-            href="#"
+            href="/shop"
             className="flex h-14 w-80 items-center justify-center rounded-full bg-[#E8920A] text-lg font-semibold text-white shadow-[0_6px_20px_rgba(232,146,10,0.40)] transition hover:scale-105"
           >
             Order Now
           </Link>
 
           <Link
-            href="#"
+            href="/franchise"
             className="flex h-14 w-80 items-center justify-center rounded-full bg-white text-lg font-semibold text-[#1A0E04] shadow-md transition hover:scale-105"
           >
             Become a Partner

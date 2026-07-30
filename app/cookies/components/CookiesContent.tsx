@@ -305,7 +305,7 @@ function CookiesBlock({ block }: { block: Block }) {
 
       <p className="mt-[6px] font-[Poppins] text-sm font-normal leading-6 text-[#4A3F32]">
         →{" "}
-        <a href="#" className="font-semibold text-[#E8920A] hover:underline">
+        <a href="/help" className="font-semibold text-[#E8920A] hover:underline">
           Help Centre
         </a>{" "}
         — submit your enquiry through the appropriate channel for the fastest

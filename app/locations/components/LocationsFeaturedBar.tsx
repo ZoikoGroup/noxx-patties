@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const meta = ["0.4 miles away", "Delivery & Collection", "Est. 20–28 min delivery"];
 
 export default function LocationsFeaturedBar() {
@@ -37,13 +39,19 @@ export default function LocationsFeaturedBar() {
 
         {/* Buttons */}
         <div className="flex shrink-0 flex-col gap-4 sm:flex-row">
-          <button className="flex h-12 items-center justify-center rounded-full bg-[#E8920A] px-8 font-[Poppins] text-sm font-bold text-white shadow-[0px_4px_12px_rgba(232,146,10,0.30)] transition hover:opacity-90">
+          <Link
+            href="/shop"
+            className="flex h-12 items-center justify-center rounded-full bg-[#E8920A] px-8 font-[Poppins] text-sm font-bold text-white shadow-[0px_4px_12px_rgba(232,146,10,0.30)] transition hover:opacity-90"
+          >
             🛒 Order Now
-          </button>
+          </Link>
 
-          <button className="flex h-12 items-center justify-center rounded-full border border-[#D5CCBE] px-8 font-[Poppins] text-sm font-semibold text-white transition hover:bg-white hover:text-[#D92127]">
+          <a
+            href="#access-points"
+            className="flex h-12 items-center justify-center rounded-full border border-[#D5CCBE] px-8 font-[Poppins] text-sm font-semibold text-white transition hover:bg-white hover:text-[#D92127]"
+          >
             View Location
-          </button>
+          </a>
         </div>
       </div>
     </section>

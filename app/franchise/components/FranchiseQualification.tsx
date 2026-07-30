@@ -1,6 +1,9 @@
 export default function FranchiseQualification() {
   return (
-    <section className="w-full bg-[#38833E] py-[72px]">
+    <section
+      id="qualification"
+      className="w-full scroll-mt-16 bg-[#38833E] py-[72px]"
+    >
       <div className="mx-auto max-w-[1440px] px-6 sm:px-8 lg:px-[92px]">
         {/* Section Heading */}
         <h2 className="text-center font-[Poppins] text-2xl font-semibold leading-tight lg:leading-[57px] text-white">
