@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 const products = [
   {
@@ -211,9 +212,12 @@ export default function PopularProducts() {
 
         {/* View Full Menu Button */}
         <div className="mt-14 flex justify-center md:mt-16 lg:mt-20">
-          <button className="rounded-full bg-[#E8920A] px-15 py-2 font-['Poppins'] text-lg font-semibold text-white shadow-[0px_4px_12px_rgba(232,146,10,0.30)] transition-all duration-300 hover:scale-105 hover:bg-[#d98509]">
+          <Link
+            href="/menu"
+            className="rounded-full bg-[#E8920A] px-15 py-2 font-['Poppins'] text-lg font-semibold text-white shadow-[0px_4px_12px_rgba(232,146,10,0.30)] transition-all duration-300 hover:scale-105 hover:bg-[#d98509]"
+          >
             View Full Menu
-          </button>
+          </Link>
         </div>
 
       </div>

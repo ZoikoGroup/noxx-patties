@@ -12,7 +12,7 @@ const sections = [
 const relatedLinks = [
   { label: "Terms", href: "/terms" },
   { label: "Privacy Policy", href: "/privacy" },
-  { label: "Help Centre", href: "#" },
+  { label: "Help Centre", href: "/help" },
 ];
 
 const linkClass =

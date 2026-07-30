@@ -2,10 +2,42 @@ import Image from "next/image";
 import Link from "next/link";
 
 const columns = [
-  { heading: "Company", links: ["About", "Careers", "Press", "Locations"] },
-  { heading: "Products", links: ["Menu", "Catering", "Bundles", "Subscriptions"] },
-  { heading: "Business", links: ["Retail Supply", "Wholesale", "Franchise", "Partner Portal"] },
-  { heading: "Legal", links: ["Terms", "Privacy", "Cookie Policy", "Help Centre"] },
+  {
+    heading: "Company",
+    links: [
+      { label: "About", href: "/about" },
+      { label: "Careers", href: "/careers" },
+      { label: "Press", href: "/press" },
+      { label: "Locations", href: "/locations" },
+    ],
+  },
+  {
+    heading: "Products",
+    links: [
+      { label: "Menu", href: "/menu" },
+      { label: "Catering", href: "/catering" },
+      { label: "Bundles", href: "/bundles" },
+      { label: "Subscriptions", href: "#" },
+    ],
+  },
+  {
+    heading: "Business",
+    links: [
+      { label: "Retail Supply", href: "/retail" },
+      { label: "Wholesale", href: "/wholesale" },
+      { label: "Franchise", href: "/franchise" },
+      { label: "Partner Portal", href: "/partner-portal" },
+    ],
+  },
+  {
+    heading: "Legal",
+    links: [
+      { label: "Terms", href: "/terms" },
+      { label: "Privacy", href: "/privacy" },
+      { label: "Cookie Policy", href: "/cookies" },
+      { label: "Help Centre", href: "/help" },
+    ],
+  },
 ];
 
 export default function Footer() {
@@ -40,12 +72,12 @@ export default function Footer() {
               </p>
               <ul className="mt-5 flex flex-col gap-4">
                 {column.links.map((link) => (
-                  <li key={link}>
+                  <li key={link.label}>
                     <Link
-                      href="#"
+                      href={link.href}
                       className="font-['DM_Sans'] text-sm text-white/90 hover:text-white"
                     >
-                      {link}
+                      {link.label}
                     </Link>
                   </li>
                 ))}

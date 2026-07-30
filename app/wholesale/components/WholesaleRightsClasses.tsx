@@ -62,7 +62,10 @@ const rightsClasses = [
 
 export default function WholesaleRightsClasses() {
   return (
-    <section className="w-full border-t border-[#EAE4D9] bg-[#FFF5E8] py-[72px]">
+    <section
+      id="rights-classes"
+      className="w-full scroll-mt-16 border-t border-[#EAE4D9] bg-[#FFF5E8] py-[72px]"
+    >
       <div className="mx-auto max-w-[1440px] px-6 sm:px-8 lg:px-[92px]">
         {/* Heading */}
         <h2 className="text-center font-[Poppins] text-4xl font-semibold leading-tight lg:leading-[57px] text-[#1A0E04]">

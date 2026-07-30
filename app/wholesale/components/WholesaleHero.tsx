@@ -23,13 +23,19 @@ export default function WholesaleHero() {
 
         {/* Buttons */}
         <div className="mt-6 flex flex-col gap-4 sm:flex-row">
-          <button className="flex h-12 items-center justify-center rounded-full bg-[#E8920A] px-10 font-[Arial] text-base font-bold text-white shadow-[0px_6px_20px_rgba(232,146,10,0.40)] transition hover:opacity-90">
+          <a
+            href="#distribution-application"
+            className="flex h-12 items-center justify-center rounded-full bg-[#E8920A] px-10 font-[Arial] text-base font-bold text-white shadow-[0px_6px_20px_rgba(232,146,10,0.40)] transition hover:opacity-90"
+          >
             Apply for Distribution
-          </button>
+          </a>
 
-          <button className="flex h-12 items-center justify-center rounded-full border border-white bg-white/10 px-10 font-[Arial] text-base font-bold text-white transition hover:bg-white hover:text-[#3C893F]">
+          <a
+            href="#rights-classes"
+            className="flex h-12 items-center justify-center rounded-full border border-white bg-white/10 px-10 font-[Arial] text-base font-bold text-white transition hover:bg-white hover:text-[#3C893F]"
+          >
             View Rights Classes
-          </button>
+          </a>
         </div>
       </div>
     </section>

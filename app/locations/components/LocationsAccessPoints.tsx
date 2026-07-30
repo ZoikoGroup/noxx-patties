@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const accessPoints = [
   {
     id: 1,
@@ -102,7 +104,10 @@ const availableItems = [
 
 export default function LocationsAccessPoints() {
   return (
-    <section className="w-full bg-[#FFB936] py-12 lg:py-[46px]">
+    <section
+      id="access-points"
+      className="w-full scroll-mt-16 bg-[#FFB936] py-12 lg:py-[46px]"
+    >
       <div className="mx-auto w-full max-w-[1440px] px-6 sm:px-8 lg:px-[92px]">
         {/* Search */}
         <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
@@ -290,13 +295,19 @@ export default function LocationsAccessPoints() {
                 </div>
 
                 {/* Buttons */}
-                <button className="mt-[16px] flex h-11 w-full items-center justify-center rounded-full bg-[#E8920A] font-[Poppins] text-sm font-bold text-white shadow-[0px_4px_12px_rgba(232,146,10,0.30)] transition hover:opacity-90">
+                <Link
+                  href="/shop"
+                  className="mt-[16px] flex h-11 w-full items-center justify-center rounded-full bg-[#E8920A] font-[Poppins] text-sm font-bold text-white shadow-[0px_4px_12px_rgba(232,146,10,0.30)] transition hover:opacity-90"
+                >
                   🛒 Order Delivery
-                </button>
+                </Link>
 
-                <button className="mt-[9px] flex h-10 w-full items-center justify-center rounded-full border border-[#EAE4D9] font-[Poppins] text-xs font-semibold text-[#1A0E04] transition hover:border-[#1A0E04]">
+                <Link
+                  href="/shop"
+                  className="mt-[9px] flex h-10 w-full items-center justify-center rounded-full border border-[#EAE4D9] font-[Poppins] text-xs font-semibold text-[#1A0E04] transition hover:border-[#1A0E04]"
+                >
                   🏃 Order Collection
-                </button>
+                </Link>
 
                 <button className="mt-[10px] flex h-10 w-full items-center justify-center rounded-full border border-[#EAE4D9] font-[Poppins] text-xs font-semibold text-[#1A0E04] transition hover:border-[#1A0E04]">
                   🗺️ Get Directions

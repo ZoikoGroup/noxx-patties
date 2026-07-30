@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const features = [
   {
@@ -56,9 +57,12 @@ export default function ProductsBusinessData() {
               </div>
             ))}
 
-            <button className="h-12 w-full rounded-[50px] bg-[#E8920A] font-['Poppins'] text-base font-bold text-white shadow-[0px_4px_14px_rgba(232,146,10,0.40)] transition hover:bg-[#d98509]">
+            <Link
+              href="/retail"
+              className="flex h-12 w-full items-center justify-center rounded-[50px] bg-[#E8920A] font-['Poppins'] text-base font-bold text-white shadow-[0px_4px_14px_rgba(232,146,10,0.40)] transition hover:bg-[#d98509]"
+            >
               Start Supply Plan →
-            </button>
+            </Link>
           </div>
 
           <div className="relative min-h-[469px] w-full overflow-hidden rounded-[20px]">

@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 const businessCards = [
   {
@@ -16,6 +17,7 @@ const businessCards = [
       "Dedicated account manager",
     ],
     button: "Become a Retail Partner →",
+    href: "/retail",
     icon: "/home/retail.png",
     bg: "bg-[#D92127]",
     tagColor: "text-white/90",
@@ -40,6 +42,7 @@ const businessCards = [
       "Cold chain logistics support",
     ],
     button: "Apply for Wholesale →",
+    href: "/wholesale",
     icon: "/home/wholesale.png",
     bg: "bg-[#1A5C3A]",
     tagColor: "text-white/40",
@@ -64,6 +67,7 @@ const businessCards = [
       "Revenue streams from day one",
     ],
     button: "Own a Location →",
+    href: "/franchise",
     icon: "/home/franchise.png",
     bg: "bg-[#E8920A]",
     tagColor: "text-[#9A5E00]",
@@ -146,11 +150,12 @@ export default function BusinessSolutions() {
               </div>
 
               {/* Button */}
-              <button
-                className={`mt-7 flex h-10 items-center justify-center rounded-full px-6 font-['Poppins'] text-sm font-bold transition-all duration-300 hover:scale-105 ${card.buttonClass}`}
+              <Link
+                href={card.href}
+                className={`mt-7 flex h-10 w-fit items-center justify-center rounded-full px-6 font-['Poppins'] text-sm font-bold transition-all duration-300 hover:scale-105 ${card.buttonClass}`}
               >
                 {card.button}
-              </button>
+              </Link>
 
               {/* Decorative Circle */}
               <div

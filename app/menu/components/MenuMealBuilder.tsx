@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const combos = [
   {
@@ -44,7 +45,10 @@ const comboItems = [
 
 export default function MenuMealBuilder() {
   return (
-    <section className="w-full bg-[#1A0E04] py-14 lg:py-[47px]">
+    <section
+      id="meal-builder"
+      className="w-full scroll-mt-16 bg-[#1A0E04] py-14 lg:py-[47px]"
+    >
       <div className="mx-auto w-full max-w-[1440px] px-6 sm:px-8 lg:px-[92px]">
         {/* Heading */}
         <h2 className="text-center font-[Poppins] text-3xl font-semibold leading-tight text-white lg:text-4xl lg:leading-[49px]">
@@ -155,9 +159,12 @@ export default function MenuMealBuilder() {
               Add Chicken Combo to Cart
             </button>
 
-            <button className="mt-[19px] flex h-12 w-full items-center justify-center rounded-xl border border-white/10 font-[Poppins] text-xs font-semibold text-white/40 transition hover:border-white/30 hover:text-white">
+            <Link
+              href="/product"
+              className="mt-[19px] flex h-12 w-full items-center justify-center rounded-xl border border-white/10 font-[Poppins] text-xs font-semibold text-white/40 transition hover:border-white/30 hover:text-white"
+            >
               Customise this order
-            </button>
+            </Link>
           </div>
         </div>
       </div>

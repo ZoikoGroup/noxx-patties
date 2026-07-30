@@ -19,7 +19,7 @@ export default function RetailCTA() {
         {/* Buttons */}
         <div className="flex w-full flex-col gap-[25px] lg:w-[288px] lg:shrink-0">
           <a
-            href="#"
+            href="/help"
             className="flex h-14 items-center justify-center whitespace-nowrap rounded-full bg-white px-6 font-[Poppins] text-sm font-bold text-[#E8920A] transition hover:bg-[#1A0E04] hover:text-white"
           >
             Start Retail Supply Plan →

@@ -42,7 +42,10 @@ const summaryRows = [
 
 export default function ShopBuildYourBox() {
   return (
-    <section className="w-full border-t border-[#EAE4D9] bg-[#E8920A] py-14 lg:py-20">
+    <section
+      id="build-your-box"
+      className="w-full scroll-mt-16 border-t border-[#EAE4D9] bg-[#E8920A] py-14 lg:py-20"
+    >
       <div className="mx-auto w-full max-w-[1440px] px-6 sm:px-8 lg:px-[92px]">
         {/* Heading */}
         <h2 className="text-center font-[Poppins] text-3xl font-semibold leading-tight text-[#1A0E04] lg:leading-[53px]">

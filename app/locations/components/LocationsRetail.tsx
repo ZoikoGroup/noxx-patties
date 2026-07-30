@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function LocationsRetail() {
   return (
     <section className="w-full border-t border-[#EAE4D9] bg-[#E8920A] py-12 lg:py-[55px]">
@@ -19,13 +21,19 @@ export default function LocationsRetail() {
 
         {/* Buttons */}
         <div className="flex w-full flex-col gap-[15px] sm:w-[320px]">
-          <button className="flex h-12 items-center justify-center rounded-full bg-white px-8 font-[Poppins] text-sm font-semibold text-[#E8920A] transition hover:bg-[#1A0E04] hover:text-white">
+          <Link
+            href="/retail"
+            className="flex h-12 items-center justify-center rounded-full bg-white px-8 font-[Poppins] text-sm font-semibold text-[#E8920A] transition hover:bg-[#1A0E04] hover:text-white"
+          >
             Find Stockists
-          </button>
+          </Link>
 
-          <button className="flex h-12 items-center justify-center rounded-full border border-white px-8 font-[Poppins] text-sm font-semibold text-white transition hover:bg-white hover:text-[#E8920A]">
+          <Link
+            href="/retail"
+            className="flex h-12 items-center justify-center rounded-full border border-white px-8 font-[Poppins] text-sm font-semibold text-white transition hover:bg-white hover:text-[#E8920A]"
+          >
             Check Availability
-          </button>
+          </Link>
         </div>
       </div>
     </section>

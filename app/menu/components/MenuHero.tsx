@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const categories = [
   { label: "🍗 Chicken", active: true },
@@ -32,17 +33,26 @@ export default function MenuHero() {
 
           {/* Buttons */}
           <div className="mt-8 flex flex-wrap gap-[11px]">
-            <button className="flex h-12 shrink-0 items-center justify-center whitespace-nowrap rounded-full bg-[#E8920A] px-4 font-[Poppins] text-sm font-bold text-white shadow-[0px_6px_20px_rgba(232,146,10,0.40)] transition hover:opacity-90">
+            <Link
+              href="/shop"
+              className="flex h-12 shrink-0 items-center justify-center whitespace-nowrap rounded-full bg-[#E8920A] px-4 font-[Poppins] text-sm font-bold text-white shadow-[0px_6px_20px_rgba(232,146,10,0.40)] transition hover:opacity-90"
+            >
               🍗 Order Now
-            </button>
+            </Link>
 
-            <button className="flex h-12 shrink-0 items-center justify-center whitespace-nowrap rounded-full border border-white/20 bg-white/10 px-4 font-[Poppins] text-sm font-semibold text-white transition hover:bg-white hover:text-[#4B893A]">
+            <a
+              href="#most-ordered"
+              className="flex h-12 shrink-0 items-center justify-center whitespace-nowrap rounded-full border border-white/20 bg-white/10 px-4 font-[Poppins] text-sm font-semibold text-white transition hover:bg-white hover:text-[#4B893A]"
+            >
               Show Popular Choices
-            </button>
+            </a>
 
-            <button className="flex h-12 shrink-0 items-center justify-center whitespace-nowrap rounded-full border border-white/20 bg-white/10 px-4 font-[Poppins] text-sm font-semibold text-white transition hover:bg-white hover:text-[#4B893A]">
+            <a
+              href="#meal-builder"
+              className="flex h-12 shrink-0 items-center justify-center whitespace-nowrap rounded-full border border-white/20 bg-white/10 px-4 font-[Poppins] text-sm font-semibold text-white transition hover:bg-white hover:text-[#4B893A]"
+            >
               Pick for Me
-            </button>
+            </a>
           </div>
 
           {/* Category Pills */}

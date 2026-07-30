@@ -227,7 +227,10 @@ const sections: Section[] = [
           <>
             You can manage cookie preferences through your browser settings. See
             our{" "}
-            <a href="#" className="font-semibold text-[#E8920A] hover:underline">
+            <a
+              href="/cookies"
+              className="font-semibold text-[#E8920A] hover:underline"
+            >
               Cookie Policy
             </a>{" "}
             for full details.
@@ -388,7 +391,7 @@ function PrivacyBlock({ block }: { block: Block }) {
 
       <p className="mt-[6px] font-[Poppins] text-sm font-normal leading-6 text-[#4A3F32]">
         →{" "}
-        <a href="#" className="font-semibold text-[#E8920A] hover:underline">
+        <a href="/help" className="font-semibold text-[#E8920A] hover:underline">
           Help Centre
         </a>{" "}
         — submit your privacy request through the appropriate channel for the

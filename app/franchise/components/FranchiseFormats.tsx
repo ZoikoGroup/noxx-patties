@@ -97,7 +97,10 @@ const formats = [
 
 export default function FranchiseFormats() {
   return (
-    <section className="flex w-full justify-center border-t border-[#EAE4D9] bg-[#FFF5E8]">
+    <section
+      id="formats"
+      className="flex w-full scroll-mt-16 justify-center border-t border-[#EAE4D9] bg-[#FFF5E8]"
+    >
       <div className="relative h-[694px] w-[1440px] max-w-full">
         {/* Heading */}
         <h2 className="absolute top-[64px] w-full text-center font-[Poppins] text-[24px] lg:text-[36px] font-semibold leading-tight lg:leading-[57px] text-[#1A0E04]">

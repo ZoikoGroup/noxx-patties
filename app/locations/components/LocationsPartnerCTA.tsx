@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function LocationsPartnerCTA() {
   return (
     <section className="w-full border-t border-[#EAE4D9] bg-[#E8920A] py-10 lg:py-[45px]">
@@ -14,9 +16,12 @@ export default function LocationsPartnerCTA() {
         </p>
 
         {/* Button */}
-        <button className="flex h-10 w-fit shrink-0 items-center justify-center rounded-full border border-white px-6 font-[Poppins] text-xs font-bold text-white transition hover:bg-white hover:text-[#E8920A]">
+        <Link
+          href="/franchise"
+          className="flex h-10 w-fit shrink-0 items-center justify-center rounded-full border border-white px-6 font-[Poppins] text-xs font-bold text-white transition hover:bg-white hover:text-[#E8920A]"
+        >
           Become a Partner →
-        </button>
+        </Link>
       </div>
     </section>
   );

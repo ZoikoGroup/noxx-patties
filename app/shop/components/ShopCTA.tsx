@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function ShopCTA() {
   return (
     <section className="w-full bg-[#E8920A] py-14 lg:py-20">
@@ -18,17 +20,26 @@ export default function ShopCTA() {
 
         {/* Buttons */}
         <div className="flex w-full flex-col gap-4 sm:w-auto sm:flex-row">
-          <button className="flex h-14 items-center justify-center rounded-full bg-white px-8 font-[Poppins] text-base font-bold text-[#E8920A] transition hover:bg-[#1A0E04] hover:text-white">
+          <Link
+            href="/menu"
+            className="flex h-14 items-center justify-center rounded-full bg-white px-8 font-[Poppins] text-base font-bold text-[#E8920A] transition hover:bg-[#1A0E04] hover:text-white"
+          >
             🛒 Order Now
-          </button>
+          </Link>
 
-          <button className="flex h-14 items-center justify-center rounded-full border-2 border-white/50 px-8 font-[Poppins] text-base font-semibold text-white transition hover:border-white hover:bg-white hover:text-[#E8920A]">
+          <a
+            href="#build-your-box"
+            className="flex h-14 items-center justify-center rounded-full border-2 border-white/50 px-8 font-[Poppins] text-base font-semibold text-white transition hover:border-white hover:bg-white hover:text-[#E8920A]"
+          >
             Build Your Box →
-          </button>
+          </a>
 
-          <button className="flex h-14 items-center justify-center rounded-full border-2 border-white/50 px-8 font-[Poppins] text-base font-semibold text-white transition hover:border-white hover:bg-white hover:text-[#E8920A]">
+          <Link
+            href="/catering"
+            className="flex h-14 items-center justify-center rounded-full border-2 border-white/50 px-8 font-[Poppins] text-base font-semibold text-white transition hover:border-white hover:bg-white hover:text-[#E8920A]"
+          >
             View Catering
-          </button>
+          </Link>
         </div>
       </div>
     </section>

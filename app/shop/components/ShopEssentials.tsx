@@ -85,7 +85,7 @@ const products = [
 
 export default function ShopEssentials() {
   return (
-    <section className="w-full bg-[#F5F1EA] py-14 lg:py-[56px]">
+    <section id="essentials" className="w-full scroll-mt-16 bg-[#F5F1EA] py-14 lg:py-[56px]">
       <div className="mx-auto w-full max-w-[1440px] px-6 sm:px-8 lg:px-[92px]">
         {/* Heading */}
         <h2 className="text-center font-[Poppins] text-3xl font-semibold leading-tight text-[#1A0E04] lg:leading-[53px]">

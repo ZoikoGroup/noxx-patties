@@ -18,9 +18,12 @@ export default function WholesaleReadyToDistribute() {
 
         {/* Actions */}
         <div className="flex w-full shrink-0 flex-col gap-4 lg:w-[340px]">
-          <button className="h-12 w-full rounded-[50px] bg-[#1A0E04] font-[Poppins] text-sm font-bold text-white transition hover:bg-black">
+          <a
+            href="#distribution-application"
+            className="flex h-12 w-full items-center justify-center rounded-[50px] bg-[#1A0E04] font-[Poppins] text-sm font-bold text-white transition hover:bg-black"
+          >
             Apply for Rights
-          </button>
+          </a>
 
           <button className="h-12 w-full rounded-[50px] border border-[#1A0E04] font-[Poppins] text-sm font-semibold text-[#1A0E04] transition hover:bg-[#1A0E04]/10">
             Download Partner Pack

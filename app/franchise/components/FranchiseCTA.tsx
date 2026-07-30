@@ -17,9 +17,12 @@ export default function FranchiseCTA() {
 
         {/* Buttons */}
         <div className="flex w-full flex-col gap-4 sm:w-auto">
-          <button className="flex h-14 items-center justify-center rounded-full bg-[#212121] px-8 font-[Poppins] text-base font-bold text-white transition duration-300 hover:bg-[#101010]">
+          <a
+            href="#qualification"
+            className="flex h-14 items-center justify-center rounded-full bg-[#212121] px-8 font-[Poppins] text-base font-bold text-white transition duration-300 hover:bg-[#101010]"
+          >
             Check Qualification →
-          </button>
+          </a>
 
           <button className="flex h-14 items-center justify-center rounded-full border-2 border-[#212121]/80 px-8 font-[Poppins] text-base font-semibold text-[#212121] transition duration-300 hover:bg-[#212121] hover:text-white">
             Download Franchise Pack

@@ -13,9 +13,9 @@ const sections = [
 ];
 
 const relatedLinks = [
-  { label: "Privacy Policy", href: "#" },
-  { label: "Cookie Policy", href: "#" },
-  { label: "Help Centre", href: "#" },
+  { label: "Privacy Policy", href: "/privacy" },
+  { label: "Cookie Policy", href: "/cookies" },
+  { label: "Help Centre", href: "/help" },
 ];
 
 export default function TermsSidebar() {

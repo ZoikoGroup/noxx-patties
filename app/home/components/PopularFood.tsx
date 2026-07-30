@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 const tabs = [
   "All",
@@ -106,9 +107,12 @@ export default function PopularFood() {
 
         {/* View Full Menu Button */}
         <div className="mt-16 flex justify-center">
-          <button className="h-14 rounded-full bg-[#E8920A] px-10 md:px-14 text-lg font-semibold text-white shadow-[0px_4px_12px_rgba(232,146,10,0.30)] transition hover:scale-105">
+          <Link
+            href="/menu"
+            className="flex h-14 items-center justify-center rounded-full bg-[#E8920A] px-10 md:px-14 text-lg font-semibold text-white shadow-[0px_4px_12px_rgba(232,146,10,0.30)] transition hover:scale-105"
+          >
             View Full Menu
-          </button>
+          </Link>
         </div>
 
       </div>
